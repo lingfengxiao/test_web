@@ -1,0 +1,83 @@
+[uwsgi-static] added mapping for /static => static
+*** Starting uWSGI 2.0.17 (64bit) on [Wed May  9 01:17:36 2018] ***
+compiled with version: 5.4.0 20160609 on 08 May 2018 16:30:10
+os: Linux-4.4.0-62-generic #83-Ubuntu SMP Wed Jan 18 14:10:15 UTC 2017
+nodename: iZ2ze22r9fb8u58ksua145Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /django_test/django-cms
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 3826
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8010 fd 4
+spawned uWSGI http 1 (pid: 4447)
+uwsgi socket 0 bound to TCP address 127.0.0.1:34203 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1acd740
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1acd740 pid: 4446 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 4446, cores: 1)
+[pid: 4446|app: 0|req: 1/1] 59.172.244.14 () {40 vars in 770 bytes} [Tue May  8 17:18:04 2018] GET / => generated 13649 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 4446|app: -1|req: -1/2] 59.172.244.14 () {40 vars in 776 bytes} [Tue May  8 17:18:04 2018] GET /static/css/custom.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 4446|app: -1|req: -1/3] 59.172.244.14 () {40 vars in 747 bytes} [Tue May  8 17:18:04 2018] GET /static/csrf.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 4446|app: -1|req: -1/4] 59.172.244.14 () {40 vars in 790 bytes} [Tue May  8 17:18:04 2018] GET /static/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 4446|app: -1|req: -1/5] 59.172.244.14 () {40 vars in 779 bytes} [Tue May  8 17:18:04 2018] GET /static/js/jquery-1.11.3.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 4446|app: -1|req: -1/6] 59.172.244.14 () {40 vars in 771 bytes} [Tue May  8 17:18:04 2018] GET /static/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 4446|app: -1|req: -1/7] 59.172.244.14 () {40 vars in 801 bytes} [Tue May  8 17:18:04 2018] GET /static/js/ie10-viewport-bug-workaround.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4446|app: 0|req: 2/8] 59.172.244.14 () {38 vars in 783 bytes} [Tue May  8 17:18:04 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 2207 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4446|app: -1|req: -1/9] 59.172.244.14 () {42 vars in 881 bytes} [Tue May  8 17:18:04 2018] GET /static/fonts/glyphicons-halflings-regular.woff2 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 4446|app: -1|req: -1/10] 59.172.244.14 () {40 vars in 765 bytes} [Tue May  8 17:18:04 2018] GET /static/js/holder.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4446|app: 0|req: 3/11] 59.172.244.14 () {38 vars in 783 bytes} [Tue May  8 17:18:04 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 2207 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4446|app: 0|req: 4/12] 59.172.244.14 () {38 vars in 783 bytes} [Tue May  8 17:18:04 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 2207 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/110x80
+[pid: 4446|app: 0|req: 5/13] 59.172.244.14 () {38 vars in 732 bytes} [Tue May  8 17:18:04 2018] GET /holder.js/110x80 => generated 2175 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4446|app: 0|req: 6/14] 59.172.244.14 () {40 vars in 770 bytes} [Tue May  8 17:18:05 2018] GET / => generated 13649 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4446|app: 0|req: 7/15] 59.172.244.14 () {38 vars in 783 bytes} [Tue May  8 17:18:05 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 2207 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/110x80
+[pid: 4446|app: 0|req: 8/16] 59.172.244.14 () {38 vars in 732 bytes} [Tue May  8 17:18:05 2018] GET /holder.js/110x80 => generated 2175 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4446|app: 0|req: 9/17] 59.172.244.14 () {38 vars in 783 bytes} [Tue May  8 17:18:05 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 2207 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4446|app: 0|req: 10/18] 59.172.244.14 () {38 vars in 783 bytes} [Tue May  8 17:18:05 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 2207 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4446|app: 0|req: 11/19] 59.172.244.14 () {40 vars in 770 bytes} [Tue May  8 17:18:06 2018] GET / => generated 13649 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4446|app: 0|req: 12/20] 59.172.244.14 () {38 vars in 783 bytes} [Tue May  8 17:18:06 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 2207 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/110x80
+[pid: 4446|app: 0|req: 13/21] 59.172.244.14 () {38 vars in 732 bytes} [Tue May  8 17:18:06 2018] GET /holder.js/110x80 => generated 2175 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4446|app: 0|req: 14/22] 59.172.244.14 () {38 vars in 783 bytes} [Tue May  8 17:18:06 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 2207 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4446|app: 0|req: 15/23] 59.172.244.14 () {38 vars in 783 bytes} [Tue May  8 17:18:06 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 2207 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4446|app: 0|req: 16/24] 59.172.244.14 () {40 vars in 770 bytes} [Tue May  8 17:18:07 2018] GET / => generated 13649 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /holder.js/110x80
+[pid: 4446|app: 0|req: 17/25] 59.172.244.14 () {38 vars in 732 bytes} [Tue May  8 17:18:07 2018] GET /holder.js/110x80 => generated 2175 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4446|app: 0|req: 18/26] 59.172.244.14 () {38 vars in 783 bytes} [Tue May  8 17:18:07 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 2207 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4446|app: 0|req: 19/27] 59.172.244.14 () {38 vars in 783 bytes} [Tue May  8 17:18:07 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 2207 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4446|app: 0|req: 20/28] 59.172.244.14 () {38 vars in 783 bytes} [Tue May  8 17:18:07 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 2207 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)

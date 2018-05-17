@@ -1,0 +1,85 @@
+nohup: ignoring input
+[uwsgi-static] added mapping for /static => static
+*** Starting uWSGI 2.0.17 (64bit) on [Wed May  9 01:20:27 2018] ***
+compiled with version: 5.4.0 20160609 on 08 May 2018 16:30:10
+os: Linux-4.4.0-62-generic #83-Ubuntu SMP Wed Jan 18 14:10:15 UTC 2017
+nodename: iZ2ze22r9fb8u58ksua145Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /django_test/django-cms
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 3826
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8010 fd 4
+spawned uWSGI http 1 (pid: 4455)
+uwsgi socket 0 bound to TCP address 127.0.0.1:35702 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1677740
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1677740 pid: 4454 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 4454, cores: 1)
+[pid: 4454|app: 0|req: 1/1] 59.172.244.14 () {40 vars in 768 bytes} [Tue May  8 17:20:31 2018] GET / => generated 13649 bytes in 45 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 4454|app: -1|req: -1/2] 59.172.244.14 () {40 vars in 775 bytes} [Tue May  8 17:20:31 2018] GET /static/css/custom.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 4454|app: -1|req: -1/3] 59.172.244.14 () {40 vars in 745 bytes} [Tue May  8 17:20:31 2018] GET /static/csrf.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 4454|app: -1|req: -1/4] 59.172.244.14 () {40 vars in 788 bytes} [Tue May  8 17:20:31 2018] GET /static/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 4454|app: -1|req: -1/5] 59.172.244.14 () {40 vars in 778 bytes} [Tue May  8 17:20:31 2018] GET /static/js/jquery-1.11.3.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 4454|app: -1|req: -1/6] 59.172.244.14 () {40 vars in 768 bytes} [Tue May  8 17:20:31 2018] GET /static/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 4454|app: -1|req: -1/7] 59.172.244.14 () {40 vars in 800 bytes} [Tue May  8 17:20:31 2018] GET /static/js/ie10-viewport-bug-workaround.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 4454|app: -1|req: -1/8] 59.172.244.14 () {40 vars in 764 bytes} [Tue May  8 17:20:31 2018] GET /static/js/holder.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 4454|app: -1|req: -1/9] 59.172.244.14 () {42 vars in 880 bytes} [Tue May  8 17:20:31 2018] GET /static/fonts/glyphicons-halflings-regular.woff2 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4454|app: 0|req: 2/10] 59.172.244.14 () {38 vars in 782 bytes} [Tue May  8 17:20:31 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 2207 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4454|app: 0|req: 3/11] 59.172.244.14 () {38 vars in 782 bytes} [Tue May  8 17:20:31 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 2207 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 4454|app: 0|req: 4/12] 59.172.244.14 () {38 vars in 782 bytes} [Tue May  8 17:20:31 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 2207 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/110x80
+[pid: 4454|app: 0|req: 5/13] 59.172.244.14 () {38 vars in 731 bytes} [Tue May  8 17:20:31 2018] GET /holder.js/110x80 => generated 2175 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 4454|app: 0|req: 6/14] 93.174.93.136 () {28 vars in 427 bytes} [Tue May  8 19:26:58 2018] GET http://www.baidu.com/cache/global/img/gs.gif => generated 1729 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 4454|app: 0|req: 7/15] 93.174.93.136 () {28 vars in 427 bytes} [Tue May  8 23:23:20 2018] GET http://www.baidu.com/cache/global/img/gs.gif => generated 1729 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 4454|app: 0|req: 8/16] 93.174.93.136 () {28 vars in 427 bytes} [Wed May  9 03:19:05 2018] GET http://www.baidu.com/cache/global/img/gs.gif => generated 1729 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 4454|app: 0|req: 9/17] 93.174.93.136 () {28 vars in 427 bytes} [Wed May  9 07:12:52 2018] GET http://www.baidu.com/cache/global/img/gs.gif => generated 1729 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /http:/www.boxun.com/
+[pid: 4454|app: 0|req: 10/18] 36.106.229.240 () {32 vars in 470 bytes} [Wed May  9 10:32:12 2018] GET http://www.boxun.com/ => generated 1660 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /http:/www.minghui.org/
+[pid: 4454|app: 0|req: 11/19] 180.95.225.201 () {32 vars in 477 bytes} [Wed May  9 10:32:12 2018] GET http://www.minghui.org/ => generated 1668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /http:/wujieliulan.com/
+[pid: 4454|app: 0|req: 12/20] 221.4.62.145 () {32 vars in 475 bytes} [Wed May  9 10:32:12 2018] GET http://wujieliulan.com/ => generated 1668 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /http:/www.epochtimes.com/
+[pid: 4454|app: 0|req: 13/21] 180.95.217.190 () {32 vars in 487 bytes} [Wed May  9 10:32:12 2018] GET http://www.epochtimes.com/ => generated 1680 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /http:/www.bing.com/
+[pid: 4454|app: 0|req: 14/22] 123.245.89.109 () {32 vars in 469 bytes} [Wed May  9 10:32:12 2018] GET http://www.bing.com/ => generated 1656 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /http:/www.123cha.com/
+[pid: 4454|app: 0|req: 15/23] 139.170.64.85 () {32 vars in 474 bytes} [Wed May  9 10:32:12 2018] GET http://www.123cha.com/ => generated 1664 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /www.voanews.com:443
+[pid: 4454|app: 0|req: 16/24] 36.5.176.107 () {22 vars in 273 bytes} [Wed May  9 10:32:12 2018] CONNECT www.voanews.com:443 => generated 1674 bytes in 1 msecs (HTTP/1.0 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /http:/www.baidu.com/
+[pid: 4454|app: 0|req: 17/25] 171.37.208.176 () {32 vars in 472 bytes} [Wed May  9 10:32:12 2018] GET http://www.baidu.com/ => generated 1660 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /http:/www.rfa.org/
+[pid: 4454|app: 0|req: 18/26] 113.0.39.182 () {32 vars in 464 bytes} [Wed May  9 10:32:18 2018] GET http://www.rfa.org/ => generated 1652 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 4454|app: 0|req: 19/27] 93.174.93.136 () {28 vars in 427 bytes} [Wed May  9 11:07:58 2018] GET http://www.baidu.com/cache/global/img/gs.gif => generated 1729 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)

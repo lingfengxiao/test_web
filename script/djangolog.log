@@ -1,0 +1,495 @@
+nohup: ignoring input
+[uWSGI] getting INI configuration from uwsgi.ini
+[uwsgi-static] added mapping for /static => static
+*** Starting uWSGI 2.0.17 (64bit) on [Wed May 16 12:48:07 2018] ***
+compiled with version: 5.4.0 20160609 on 08 May 2018 16:30:10
+os: Linux-4.4.0-62-generic #83-Ubuntu SMP Wed Jan 18 14:10:15 UTC 2017
+nodename: iZ2ze22r9fb8u58ksua145Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /django_test/script
+writing pidfile to /django_test/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi2
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /django_test/django-cms/
+your processes number limit is 3826
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /django_test/script/uwsgi.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1e5df80
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1e5df80 pid: 19991 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19991)
+spawned uWSGI worker 1 (pid: 19994, cores: 1)
+spawned uWSGI worker 2 (pid: 19995, cores: 1)
+spawned uWSGI worker 3 (pid: 19996, cores: 1)
+spawned uWSGI worker 4 (pid: 19997, cores: 1)
+spawned uWSGI worker 5 (pid: 19998, cores: 1)
+[pid: 19997|app: 0|req: 1/1] 59.172.180.250 () {42 vars in 746 bytes} [Wed May 16 04:48:18 2018] GET / => generated 14223 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+Not Found: /holder.js/110x80
+Not Found: /holder.js/400x300
+Not Found: /holder.js/400x300
+Not Found: /favicon.ico
+Not Found: /holder.js/400x300
+[pid: 19997|app: 0|req: 2/2] 59.172.180.250 () {42 vars in 731 bytes} [Wed May 16 04:48:19 2018] GET /favicon.ico => generated 2162 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Wed May 16 04:48:19 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /holder.js/110x80 (ip 59.172.180.250) !!!
+Wed May 16 04:48:19 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /holder.js/110x80 (59.172.180.250)
+IOError: write error
+Wed May 16 04:48:19 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /holder.js/400x300?bg=FF8C00&text=Image%201 (ip 59.172.180.250) !!!
+Wed May 16 04:48:19 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /holder.js/400x300?bg=FF8C00&text=Image%201 (59.172.180.250)
+IOError: write error
+[pid: 19998|app: 0|req: 1/3] 59.172.180.250 () {42 vars in 792 bytes} [Wed May 16 04:48:18 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 0 bytes in 171 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May 16 04:48:19 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /holder.js/400x300?bg=FF8C00&text=Image%202 (ip 59.172.180.250) !!!
+Wed May 16 04:48:19 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /holder.js/400x300?bg=FF8C00&text=Image%202 (59.172.180.250)
+IOError: write error
+[pid: 19994|app: 0|req: 1/4] 59.172.180.250 () {42 vars in 792 bytes} [Wed May 16 04:48:18 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 0 bytes in 171 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May 16 04:48:19 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /holder.js/400x300?bg=FF8C00&text=Image%203 (ip 59.172.180.250) !!!
+Wed May 16 04:48:19 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /holder.js/400x300?bg=FF8C00&text=Image%203 (59.172.180.250)
+IOError: write error
+[pid: 19996|app: 0|req: 1/5] 59.172.180.250 () {42 vars in 792 bytes} [Wed May 16 04:48:18 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 0 bytes in 172 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+[pid: 19995|app: 0|req: 1/6] 59.172.180.250 () {42 vars in 741 bytes} [Wed May 16 04:48:18 2018] GET /holder.js/110x80 => generated 0 bytes in 171 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+[pid: 19997|app: 0|req: 3/7] 101.199.108.54 () {40 vars in 716 bytes} [Wed May 16 04:54:39 2018] GET / => generated 14223 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 19998|app: 0|req: 2/8] 106.120.161.66 () {38 vars in 644 bytes} [Wed May 16 05:02:52 2018] GET / => generated 14223 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 19994|app: 0|req: 2/9] 101.199.112.53 () {40 vars in 665 bytes} [Wed May 16 05:03:16 2018] GET / => generated 14223 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 19996|app: 0|req: 2/10] 106.120.161.66 () {38 vars in 647 bytes} [Wed May 16 05:07:32 2018] GET /? => generated 14223 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 19995|app: 0|req: 2/11] 220.181.132.198 () {40 vars in 667 bytes} [Wed May 16 05:07:58 2018] GET /? => generated 14223 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 19997|app: 0|req: 4/12] 58.64.185.147 () {44 vars in 744 bytes} [Wed May 16 05:29:15 2018] GET / => generated 14223 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 19998|app: 0|req: 3/13] 180.163.220.43 () {38 vars in 621 bytes} [Wed May 16 05:29:19 2018] GET / => generated 14223 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 19994|app: 0|req: 3/14] 180.163.220.42 () {42 vars in 746 bytes} [Wed May 16 05:29:19 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 2209 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 19996|app: 0|req: 3/15] 180.163.220.42 () {42 vars in 746 bytes} [Wed May 16 05:29:19 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 2209 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 19995|app: 0|req: 3/16] 180.163.220.42 () {42 vars in 746 bytes} [Wed May 16 05:29:20 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 2209 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/110x80
+[pid: 19997|app: 0|req: 5/17] 180.163.220.42 () {42 vars in 695 bytes} [Wed May 16 05:29:20 2018] GET /holder.js/110x80 => generated 2177 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19998|app: 0|req: 4/18] 220.181.132.200 () {40 vars in 725 bytes} [Wed May 16 05:40:09 2018] GET / => generated 14223 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 19994|app: 0|req: 4/19] 103.218.216.105 () {44 vars in 806 bytes} [Wed May 16 06:13:34 2018] GET / => generated 14223 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+Not Found: /holder.js/400x300
+[pid: 19995|app: 0|req: 4/20] 103.218.216.105 () {44 vars in 812 bytes} [Wed May 16 06:13:35 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 2209 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19996|app: 0|req: 4/21] 103.218.216.105 () {44 vars in 812 bytes} [Wed May 16 06:13:35 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 2209 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 19997|app: 0|req: 6/22] 103.218.216.105 () {44 vars in 812 bytes} [Wed May 16 06:13:35 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 2209 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/110x80
+[pid: 19998|app: 0|req: 5/23] 103.218.216.105 () {44 vars in 761 bytes} [Wed May 16 06:13:35 2018] GET /holder.js/110x80 => generated 2177 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19994|app: 0|req: 5/24] 103.218.216.105 () {44 vars in 766 bytes} [Wed May 16 06:13:54 2018] GET / => generated 14223 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 19995|app: 0|req: 5/25] 103.218.216.105 () {44 vars in 812 bytes} [Wed May 16 06:13:55 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 2209 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 19996|app: 0|req: 5/26] 103.218.216.105 () {44 vars in 812 bytes} [Wed May 16 06:13:55 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 2209 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 19997|app: 0|req: 7/27] 103.218.216.105 () {44 vars in 812 bytes} [Wed May 16 06:13:55 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 2209 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/110x80
+[pid: 19998|app: 0|req: 6/28] 103.218.216.105 () {44 vars in 761 bytes} [Wed May 16 06:13:55 2018] GET /holder.js/110x80 => generated 2177 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19994|app: 0|req: 6/29] 106.11.242.157 () {40 vars in 642 bytes} [Wed May 16 07:33:09 2018] GET / => generated 14223 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 19995|app: 0|req: 6/30] 101.199.121.77 () {38 vars in 655 bytes} [Wed May 16 07:48:03 2018] GET / => generated 14223 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+Not Found: /holder.js/400x300
+Not Found: /holder.js/400x300
+[pid: 19997|app: 0|req: 8/31] 101.199.121.77 () {40 vars in 758 bytes} [Wed May 16 07:48:03 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 2209 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19996|app: 0|req: 6/33] 101.199.121.77 () {40 vars in 758 bytes} [Wed May 16 07:48:03 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 2209 bytes in 10 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19998|app: 0|req: 7/33] 101.199.121.77 () {40 vars in 758 bytes} [Wed May 16 07:48:03 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 2209 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/110x80
+[pid: 19994|app: 0|req: 7/34] 101.199.121.77 () {40 vars in 707 bytes} [Wed May 16 07:48:03 2018] GET /holder.js/110x80 => generated 2177 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19995|app: 0|req: 7/35] 101.199.120.145 () {38 vars in 648 bytes} [Wed May 16 07:49:19 2018] GET / => generated 14223 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+Not Found: /holder.js/110x80
+Not Found: /holder.js/400x300
+Not Found: /holder.js/400x300
+[pid: 19996|app: 0|req: 7/37] 101.199.120.145 () {40 vars in 747 bytes} [Wed May 16 07:49:20 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 2205 bytes in 12 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19994|app: 0|req: 8/37] 101.199.120.145 () {40 vars in 696 bytes} [Wed May 16 07:49:20 2018] GET /holder.js/110x80 => generated 2173 bytes in 10 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19997|app: 0|req: 9/39] 101.199.120.145 () {40 vars in 747 bytes} [Wed May 16 07:49:20 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 2205 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19998|app: 0|req: 8/39] 101.199.120.145 () {40 vars in 747 bytes} [Wed May 16 07:49:20 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 2205 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19995|app: 0|req: 8/40] 220.181.132.198 () {42 vars in 698 bytes} [Wed May 16 07:49:37 2018] GET / => generated 14223 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 19996|app: 0|req: 8/41] 180.163.220.124 () {38 vars in 615 bytes} [Wed May 16 07:49:42 2018] GET / => generated 14223 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+[pid: 19994|app: 0|req: 9/42] 180.163.220.45 () {42 vars in 734 bytes} [Wed May 16 07:49:42 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 2205 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+Not Found: /holder.js/400x300
+[pid: 19998|app: 0|req: 9/43] 180.163.220.96 () {42 vars in 734 bytes} [Wed May 16 07:49:42 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 2205 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 19997|app: 0|req: 10/44] 180.163.220.45 () {42 vars in 734 bytes} [Wed May 16 07:49:42 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 2205 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/110x80
+[pid: 19995|app: 0|req: 9/45] 180.163.220.45 () {42 vars in 683 bytes} [Wed May 16 07:49:42 2018] GET /holder.js/110x80 => generated 2173 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Wed May 16 08:03:40 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 113.57.245.115) !!!
+Wed May 16 08:03:40 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (113.57.245.115)
+IOError: write error
+[pid: 19996|app: 0|req: 9/46] 113.57.245.115 () {38 vars in 646 bytes} [Wed May 16 08:03:40 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May 16 08:03:42 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 123.151.77.74) !!!
+Wed May 16 08:03:42 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (123.151.77.74)
+IOError: write error
+[pid: 19994|app: 0|req: 10/47] 123.151.77.74 () {46 vars in 842 bytes} [Wed May 16 08:03:42 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Wed May 16 08:03:42 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 113.57.245.115) !!!
+Wed May 16 08:03:42 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (113.57.245.115)
+IOError: write error
+[pid: 19998|app: 0|req: 10/48] 113.57.245.115 () {38 vars in 646 bytes} [Wed May 16 08:03:42 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Wed May 16 08:03:44 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 113.57.245.115) !!!
+Wed May 16 08:03:44 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (113.57.245.115)
+IOError: write error
+[pid: 19997|app: 0|req: 11/49] 113.57.245.115 () {38 vars in 646 bytes} [Wed May 16 08:03:44 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Wed May 16 08:03:49 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 113.57.245.115) !!!
+Wed May 16 08:03:49 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (113.57.245.115)
+IOError: write error
+[pid: 19995|app: 0|req: 10/50] 113.57.245.115 () {38 vars in 654 bytes} [Wed May 16 08:03:49 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May 16 08:03:54 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 123.151.77.74) !!!
+Wed May 16 08:03:54 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (123.151.77.74)
+IOError: write error
+[pid: 19996|app: 0|req: 10/51] 123.151.77.74 () {46 vars in 850 bytes} [Wed May 16 08:03:54 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Wed May 16 08:03:55 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 113.57.245.115) !!!
+Wed May 16 08:03:55 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (113.57.245.115)
+IOError: write error
+[pid: 19994|app: 0|req: 11/52] 113.57.245.115 () {38 vars in 654 bytes} [Wed May 16 08:03:55 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Wed May 16 08:03:55 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 113.57.245.115) !!!
+Wed May 16 08:03:55 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (113.57.245.115)
+IOError: write error
+[pid: 19998|app: 0|req: 11/53] 113.57.245.115 () {38 vars in 654 bytes} [Wed May 16 08:03:55 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May 16 08:04:07 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 123.151.77.74) !!!
+Wed May 16 08:04:07 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (123.151.77.74)
+IOError: write error
+[pid: 19997|app: 0|req: 12/54] 123.151.77.74 () {42 vars in 757 bytes} [Wed May 16 08:04:07 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Wed May 16 08:04:07 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 113.57.245.115) !!!
+Wed May 16 08:04:07 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (113.57.245.115)
+IOError: write error
+[pid: 19995|app: 0|req: 11/55] 113.57.245.115 () {38 vars in 654 bytes} [Wed May 16 08:04:07 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Wed May 16 08:04:07 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 113.57.245.115) !!!
+Wed May 16 08:04:07 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (113.57.245.115)
+IOError: write error
+[pid: 19996|app: 0|req: 11/56] 113.57.245.115 () {38 vars in 654 bytes} [Wed May 16 08:04:07 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May 16 08:04:43 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 61.151.226.71) !!!
+Wed May 16 08:04:43 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (61.151.226.71)
+IOError: write error
+[pid: 19994|app: 0|req: 12/57] 61.151.226.71 () {36 vars in 626 bytes} [Wed May 16 08:04:43 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Wed May 16 08:08:49 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 123.151.77.74) !!!
+Wed May 16 08:08:49 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (123.151.77.74)
+IOError: write error
+[pid: 19998|app: 0|req: 12/58] 123.151.77.74 () {42 vars in 757 bytes} [Wed May 16 08:08:49 2018] GET / => generated 0 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Wed May 16 08:08:49 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 113.57.245.115) !!!
+Wed May 16 08:08:49 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (113.57.245.115)
+IOError: write error
+[pid: 19997|app: 0|req: 13/59] 113.57.245.115 () {38 vars in 654 bytes} [Wed May 16 08:08:49 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Wed May 16 08:08:50 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 113.57.245.115) !!!
+Wed May 16 08:08:50 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (113.57.245.115)
+IOError: write error
+[pid: 19995|app: 0|req: 12/60] 113.57.245.115 () {38 vars in 654 bytes} [Wed May 16 08:08:50 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May 16 08:13:02 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 103.218.216.125) !!!
+Wed May 16 08:13:02 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (103.218.216.125)
+IOError: write error
+[pid: 19996|app: 0|req: 12/61] 103.218.216.125 () {46 vars in 863 bytes} [Wed May 16 08:13:02 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Wed May 16 10:07:18 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 103.218.216.128) !!!
+Wed May 16 10:07:18 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (103.218.216.128)
+IOError: write error
+[pid: 19994|app: 0|req: 13/62] 103.218.216.128 () {46 vars in 863 bytes} [Wed May 16 10:07:18 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Wed May 16 12:16:26 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 101.227.139.163) !!!
+Wed May 16 12:16:26 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (101.227.139.163)
+IOError: write error
+[pid: 19998|app: 0|req: 13/63] 101.227.139.163 () {36 vars in 551 bytes} [Wed May 16 12:16:26 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.0 200) 4 headers in 0 bytes (0 switches on core 0)
+Wed May 16 12:16:31 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /?nsukey=4xeitpO1RxjLfVUG02FP2Fb0CF2fzlmkNejkRvEqWtSUTK2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR72BT2af61cDwFm9tNXxOtlTbF2FYX2Bi2382BlxFuxX3UjuQK2F1qISL02F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg2B87l4Ky2yteZqOb42BPTS81QcyQ2B2Fqoww3D3D (ip 61.129.7.254) !!!
+Wed May 16 12:16:31 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /?nsukey=4xeitpO1RxjLfVUG02FP2Fb0CF2fzlmkNejkRvEqWtSUTK2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR72BT2af61cDwFm9tNXxOtlTbF2FYX2Bi2382BlxFuxX3UjuQK2F1qISL02F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg2B87l4Ky2yteZqOb42BPTS81QcyQ2B2Fqoww3D3D (61.129.7.254)
+IOError: write error
+[pid: 19997|app: 0|req: 14/64] 61.129.7.254 () {46 vars in 1419 bytes} [Wed May 16 12:16:31 2018] GET /?nsukey=4xeitpO1RxjLfVUG02FP2Fb0CF2fzlmkNejkRvEqWtSUTK2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR72BT2af61cDwFm9tNXxOtlTbF2FYX2Bi2382BlxFuxX3UjuQK2F1qISL02F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg2B87l4Ky2yteZqOb42BPTS81QcyQ2B2Fqoww3D3D => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Wed May 16 12:16:31 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /?nsukey=4xeitpO1RxjLfVUG02FP2Fb0CF2fzlmkNejkRvEqWtSUTK2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR72BT2af61cDwFm9tNXxOtlTbF2FYX2Bi2382BlxFuxX3UjuQK2F1qISL02F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg2B87l4Ky2yteZqOb42BPTS81QcyQ2B2Fqoww3D3D (ip 61.151.178.175) !!!
+Wed May 16 12:16:31 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /?nsukey=4xeitpO1RxjLfVUG02FP2Fb0CF2fzlmkNejkRvEqWtSUTK2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR72BT2af61cDwFm9tNXxOtlTbF2FYX2Bi2382BlxFuxX3UjuQK2F1qISL02F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg2B87l4Ky2yteZqOb42BPTS81QcyQ2B2Fqoww3D3D (61.151.178.175)
+IOError: write error
+[pid: 19995|app: 0|req: 13/65] 61.151.178.175 () {46 vars in 1421 bytes} [Wed May 16 12:16:31 2018] GET /?nsukey=4xeitpO1RxjLfVUG02FP2Fb0CF2fzlmkNejkRvEqWtSUTK2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR72BT2af61cDwFm9tNXxOtlTbF2FYX2Bi2382BlxFuxX3UjuQK2F1qISL02F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg2B87l4Ky2yteZqOb42BPTS81QcyQ2B2Fqoww3D3D => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+[pid: 19996|app: 0|req: 13/66] 182.131.10.54 () {42 vars in 1422 bytes} [Wed May 16 12:16:32 2018] GET /?nsukey=4xeitpO1RxjLfVUG0%2FP%2Fb0CF2fzlmkNejkRvEqWtSUTK%2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR7%2BT2af61cDwFm9tNXxOtlTbF%2FYX%2Bi238%2BlxFuxX3UjuQK%2F1qISL0%2F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg%2B87l4Ky2yteZqOb4%2BPTS81QcyQ%2B%2Fqoww%3D%3D => generated 14223 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+Not Found: /holder.js/400x300
+Not Found: /holder.js/400x300
+Wed May 16 12:16:32 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /holder.js/400x300?bg=FF8C00&text=Image%202 (ip 112.195.91.198) !!!
+Wed May 16 12:16:32 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /holder.js/400x300?bg=FF8C00&text=Image%202 (112.195.91.198)
+IOError: write error
+[pid: 19997|app: 0|req: 15/67] 112.195.91.198 () {42 vars in 1229 bytes} [Wed May 16 12:16:32 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 0 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May 16 12:16:32 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /holder.js/400x300?bg=FF8C00&text=Image%203 (ip 112.195.91.198) !!!
+Wed May 16 12:16:32 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /holder.js/400x300?bg=FF8C00&text=Image%203 (112.195.91.198)
+IOError: write error
+[pid: 19998|app: 0|req: 14/68] 112.195.91.198 () {42 vars in 1229 bytes} [Wed May 16 12:16:32 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 0 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May 16 12:16:32 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /holder.js/400x300?bg=FF8C00&text=Image%201 (ip 112.195.91.198) !!!
+Wed May 16 12:16:32 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /holder.js/400x300?bg=FF8C00&text=Image%201 (112.195.91.198)
+IOError: write error
+[pid: 19994|app: 0|req: 14/69] 112.195.91.198 () {42 vars in 1229 bytes} [Wed May 16 12:16:32 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 0 bytes in 12 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /holder.js/110x80
+Wed May 16 12:16:32 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /holder.js/110x80 (ip 112.195.91.198) !!!
+Wed May 16 12:16:32 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /holder.js/110x80 (112.195.91.198)
+IOError: write error
+[pid: 19995|app: 0|req: 14/70] 112.195.91.198 () {42 vars in 1178 bytes} [Wed May 16 12:16:32 2018] GET /holder.js/110x80 => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Wed May 16 12:16:33 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 112.195.91.198) !!!
+Wed May 16 12:16:33 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (112.195.91.198)
+IOError: write error
+[pid: 19996|app: 0|req: 14/71] 112.195.91.198 () {42 vars in 1168 bytes} [Wed May 16 12:16:33 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May 16 12:17:30 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /?nsukey=4xeitpO1RxjLfVUG0%2FP%2Fb0CF2fzlmkNejkRvEqWtSUTK%2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR7%2BT2af61cDwFm9tNXxOtlTbF%2FYX%2Bi238%2BlxFuxX3UjuQK%2F1qISL0%2F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg%2B87l4Ky2yteZqOb4%2BPTS81QcyQ%2B%2Fqoww%3D%3D (ip 101.227.131.247) !!!
+Wed May 16 12:17:30 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /?nsukey=4xeitpO1RxjLfVUG0%2FP%2Fb0CF2fzlmkNejkRvEqWtSUTK%2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR7%2BT2af61cDwFm9tNXxOtlTbF%2FYX%2Bi238%2BlxFuxX3UjuQK%2F1qISL0%2F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg%2B87l4Ky2yteZqOb4%2BPTS81QcyQ%2B%2Fqoww%3D%3D (101.227.131.247)
+IOError: write error
+[pid: 19997|app: 0|req: 16/72] 101.227.131.247 () {36 vars in 1159 bytes} [Wed May 16 12:17:30 2018] GET /?nsukey=4xeitpO1RxjLfVUG0%2FP%2Fb0CF2fzlmkNejkRvEqWtSUTK%2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR7%2BT2af61cDwFm9tNXxOtlTbF%2FYX%2Bi238%2BlxFuxX3UjuQK%2F1qISL0%2F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg%2B87l4Ky2yteZqOb4%2BPTS81QcyQ%2B%2Fqoww%3D%3D => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Wed May 16 12:17:30 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /?nsukey=4xeitpO1RxjLfVUG0%2FP%2Fb0CF2fzlmkNejkRvEqWtSUTK%2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR7%2BT2af61cDwFm9tNXxOtlTbF%2FYX%2Bi238%2BlxFuxX3UjuQK%2F1qISL0%2F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg%2B87l4Ky2yteZqOb4%2BPTS81QcyQ%2B%2Fqoww%3D%3D (ip 61.151.226.53) !!!
+Wed May 16 12:17:30 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /?nsukey=4xeitpO1RxjLfVUG0%2FP%2Fb0CF2fzlmkNejkRvEqWtSUTK%2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR7%2BT2af61cDwFm9tNXxOtlTbF%2FYX%2Bi238%2BlxFuxX3UjuQK%2F1qISL0%2F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg%2B87l4Ky2yteZqOb4%2BPTS81QcyQ%2B%2Fqoww%3D%3D (61.151.226.53)
+IOError: write error
+[pid: 19998|app: 0|req: 15/73] 61.151.226.53 () {36 vars in 1122 bytes} [Wed May 16 12:17:30 2018] GET /?nsukey=4xeitpO1RxjLfVUG0%2FP%2Fb0CF2fzlmkNejkRvEqWtSUTK%2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR7%2BT2af61cDwFm9tNXxOtlTbF%2FYX%2Bi238%2BlxFuxX3UjuQK%2F1qISL0%2F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg%2B87l4Ky2yteZqOb4%2BPTS81QcyQ%2B%2Fqoww%3D%3D => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Wed May 16 12:17:30 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 61.151.226.53) !!!
+Wed May 16 12:17:30 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (61.151.226.53)
+IOError: write error
+[pid: 19994|app: 0|req: 15/74] 61.151.226.53 () {38 vars in 939 bytes} [Wed May 16 12:17:30 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Wed May 16 12:17:31 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 101.227.131.247) !!!
+Wed May 16 12:17:31 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (101.227.131.247)
+IOError: write error
+[pid: 19995|app: 0|req: 15/75] 101.227.131.247 () {38 vars in 950 bytes} [Wed May 16 12:17:31 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Wed May 16 12:33:06 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /?nsukey=4xeitpO1RxjLfVUG0%2FP%2Fb0CF2fzlmkNejkRvEqWtSUTK%2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR7%2BT2af61cDwFm9tNXxOtlTbF%2FYX%2Bi238%2BlxFuxX3UjuQK%2F1qISL0%2F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg%2B87l4Ky2yteZqOb4%2BPTS81QcyQ%2B%2Fqoww%3D%3D (ip 117.185.117.51) !!!
+Wed May 16 12:33:06 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /?nsukey=4xeitpO1RxjLfVUG0%2FP%2Fb0CF2fzlmkNejkRvEqWtSUTK%2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR7%2BT2af61cDwFm9tNXxOtlTbF%2FYX%2Bi238%2BlxFuxX3UjuQK%2F1qISL0%2F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg%2B87l4Ky2yteZqOb4%2BPTS81QcyQ%2B%2Fqoww%3D%3D (117.185.117.51)
+IOError: write error
+[pid: 19996|app: 0|req: 15/76] 117.185.117.51 () {38 vars in 1141 bytes} [Wed May 16 12:33:06 2018] GET /?nsukey=4xeitpO1RxjLfVUG0%2FP%2Fb0CF2fzlmkNejkRvEqWtSUTK%2FDt9tk6SnBtk4tNoF8SwWS1nUUSRDg7VM6NIEeLx89wW75VZlhKR7%2BT2af61cDwFm9tNXxOtlTbF%2FYX%2Bi238%2BlxFuxX3UjuQK%2F1qISL0%2F6I09GYuuJE9UAO5wpN2Rv1ZhJqjx0ZxXg%2B87l4Ky2yteZqOb4%2BPTS81QcyQ%2B%2Fqoww%3D%3D => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Wed May 16 12:33:22 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 117.185.117.51) !!!
+Wed May 16 12:33:22 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (117.185.117.51)
+IOError: write error
+[pid: 19997|app: 0|req: 17/77] 117.185.117.51 () {40 vars in 961 bytes} [Wed May 16 12:33:22 2018] GET / => generated 0 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Wed May 16 12:55:59 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 59.172.180.250) !!!
+Wed May 16 12:55:59 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (59.172.180.250)
+IOError: write error
+[pid: 19998|app: 0|req: 16/78] 59.172.180.250 () {42 vars in 738 bytes} [Wed May 16 12:55:59 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Wed May 16 12:55:59 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 59.172.180.250) !!!
+Wed May 16 12:55:59 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (59.172.180.250)
+IOError: write error
+[pid: 19994|app: 0|req: 16/79] 59.172.180.250 () {42 vars in 719 bytes} [Wed May 16 12:55:59 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May 16 17:38:32 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 59.172.180.250) !!!
+Wed May 16 17:38:32 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (59.172.180.250)
+IOError: write error
+[pid: 19995|app: 0|req: 16/80] 59.172.180.250 () {38 vars in 659 bytes} [Wed May 16 17:38:32 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Wed May 16 17:38:32 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 59.172.180.250) !!!
+Wed May 16 17:38:32 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (59.172.180.250)
+IOError: write error
+[pid: 19997|app: 0|req: 18/81] 59.172.180.250 () {38 vars in 580 bytes} [Wed May 16 17:38:32 2018] GET /favicon.ico => generated 0 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May 16 17:38:32 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /?t=1526492315318 (ip 59.172.180.250) !!!
+Wed May 16 17:38:32 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /?t=1526492315318 (59.172.180.250)
+IOError: write error
+[pid: 19996|app: 0|req: 16/82] 59.172.180.250 () {38 vars in 690 bytes} [Wed May 16 17:38:32 2018] GET /?t=1526492315318 => generated 0 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Thu May 17 03:21:35 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 103.218.216.104) !!!
+Thu May 17 03:21:35 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (103.218.216.104)
+IOError: write error
+[pid: 19998|app: 0|req: 17/83] 103.218.216.104 () {46 vars in 863 bytes} [Thu May 17 03:21:35 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Thu May 17 03:21:36 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 103.218.216.104) !!!
+Thu May 17 03:21:36 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (103.218.216.104)
+IOError: write error
+[pid: 19994|app: 0|req: 17/84] 103.218.216.104 () {44 vars in 751 bytes} [Thu May 17 03:21:36 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Thu May 17 03:24:33 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 123.151.77.74) !!!
+Thu May 17 03:24:33 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (123.151.77.74)
+IOError: write error
+[pid: 19995|app: 0|req: 17/85] 123.151.77.74 () {40 vars in 718 bytes} [Thu May 17 03:24:33 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Thu May 17 03:24:33 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 113.57.245.115) !!!
+Thu May 17 03:24:33 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (113.57.245.115)
+IOError: write error
+[pid: 19997|app: 0|req: 19/86] 113.57.245.115 () {38 vars in 646 bytes} [Thu May 17 03:24:33 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Thu May 17 03:24:35 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 113.57.245.115) !!!
+Thu May 17 03:24:35 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (113.57.245.115)
+IOError: write error
+[pid: 19996|app: 0|req: 17/87] 113.57.245.115 () {38 vars in 646 bytes} [Thu May 17 03:24:35 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Thu May 17 03:25:12 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 123.151.77.74) !!!
+Thu May 17 03:25:12 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (123.151.77.74)
+IOError: write error
+[pid: 19998|app: 0|req: 18/88] 123.151.77.74 () {40 vars in 718 bytes} [Thu May 17 03:25:12 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Thu May 17 03:25:12 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 113.57.245.115) !!!
+Thu May 17 03:25:12 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (113.57.245.115)
+IOError: write error
+[pid: 19994|app: 0|req: 18/89] 113.57.245.115 () {38 vars in 646 bytes} [Thu May 17 03:25:12 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Thu May 17 03:25:12 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 113.57.245.115) !!!
+Thu May 17 03:25:12 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (113.57.245.115)
+IOError: write error
+[pid: 19995|app: 0|req: 18/90] 113.57.245.115 () {38 vars in 646 bytes} [Thu May 17 03:25:12 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Thu May 17 04:26:16 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 59.172.180.250) !!!
+Thu May 17 04:26:16 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (59.172.180.250)
+IOError: write error
+[pid: 19997|app: 0|req: 20/91] 59.172.180.250 () {38 vars in 645 bytes} [Thu May 17 04:26:16 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Thu May 17 04:26:20 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 59.172.180.250) !!!
+Thu May 17 04:26:20 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (59.172.180.250)
+IOError: write error
+[pid: 19996|app: 0|req: 18/92] 59.172.180.250 () {38 vars in 645 bytes} [Thu May 17 04:26:20 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Thu May 17 04:40:27 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 59.172.180.250) !!!
+Thu May 17 04:40:27 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (59.172.180.250)
+IOError: write error
+[pid: 19998|app: 0|req: 19/93] 59.172.180.250 () {40 vars in 686 bytes} [Thu May 17 04:40:27 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+Thu May 17 04:40:27 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /favicon.ico (ip 59.172.180.250) !!!
+Thu May 17 04:40:27 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /favicon.ico (59.172.180.250)
+IOError: write error
+[pid: 19994|app: 0|req: 19/94] 59.172.180.250 () {40 vars in 667 bytes} [Thu May 17 04:40:27 2018] GET /favicon.ico => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Thu May 17 04:46:28 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 106.120.161.66) !!!
+Thu May 17 04:46:28 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (106.120.161.66)
+IOError: write error
+[pid: 19995|app: 0|req: 19/95] 106.120.161.66 () {38 vars in 645 bytes} [Thu May 17 04:46:28 2018] GET / => generated 0 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Thu May 17 04:46:29 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 182.118.20.144) !!!
+Thu May 17 04:46:29 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (182.118.20.144)
+IOError: write error
+[pid: 19997|app: 0|req: 21/96] 182.118.20.144 () {42 vars in 717 bytes} [Thu May 17 04:46:29 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Thu May 17 04:46:29 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 171.13.14.145) !!!
+Thu May 17 04:46:29 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (171.13.14.145)
+IOError: write error
+[pid: 19996|app: 0|req: 19/97] 171.13.14.145 () {42 vars in 716 bytes} [Thu May 17 04:46:29 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Thu May 17 04:46:32 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 106.120.161.66) !!!
+Thu May 17 04:46:32 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (106.120.161.66)
+IOError: write error
+[pid: 19998|app: 0|req: 20/98] 106.120.161.66 () {38 vars in 633 bytes} [Thu May 17 04:46:32 2018] GET / => generated 0 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Thu May 17 04:46:32 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 171.13.14.152) !!!
+Thu May 17 04:46:32 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (171.13.14.152)
+IOError: write error
+[pid: 19994|app: 0|req: 20/99] 171.13.14.152 () {42 vars in 704 bytes} [Thu May 17 04:46:32 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Thu May 17 04:46:33 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 182.118.20.157) !!!
+Thu May 17 04:46:33 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (182.118.20.157)
+IOError: write error
+[pid: 19995|app: 0|req: 20/100] 182.118.20.157 () {42 vars in 705 bytes} [Thu May 17 04:46:33 2018] GET / => generated 0 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Thu May 17 04:47:00 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 101.199.112.55) !!!
+Thu May 17 04:47:00 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (101.199.112.55)
+IOError: write error
+[pid: 19997|app: 0|req: 22/101] 101.199.112.55 () {40 vars in 716 bytes} [Thu May 17 04:47:00 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Thu May 17 04:47:02 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 171.13.14.134) !!!
+Thu May 17 04:47:02 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (171.13.14.134)
+IOError: write error
+[pid: 19996|app: 0|req: 20/102] 171.13.14.134 () {44 vars in 777 bytes} [Thu May 17 04:47:02 2018] GET / => generated 0 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Thu May 17 04:47:06 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 220.181.132.195) !!!
+Thu May 17 04:47:06 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (220.181.132.195)
+IOError: write error
+[pid: 19998|app: 0|req: 21/103] 220.181.132.195 () {40 vars in 725 bytes} [Thu May 17 04:47:06 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Thu May 17 04:47:56 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 210.209.70.229) !!!
+Thu May 17 04:47:56 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (210.209.70.229)
+IOError: write error
+[pid: 19994|app: 0|req: 21/104] 210.209.70.229 () {42 vars in 760 bytes} [Thu May 17 04:47:56 2018] GET / => generated 0 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Thu May 17 07:52:30 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 158.69.32.224) !!!
+Thu May 17 07:52:30 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (158.69.32.224)
+IOError: write error
+[pid: 19995|app: 0|req: 21/105] 158.69.32.224 () {34 vars in 450 bytes} [Thu May 17 07:52:30 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /http:/www.xiaolingfeng.top/
+Thu May 17 07:52:31 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F (ip 158.69.32.224) !!!
+Thu May 17 07:52:31 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F (158.69.32.224)
+IOError: write error
+[pid: 19997|app: 0|req: 23/106] 158.69.32.224 () {34 vars in 517 bytes} [Thu May 17 07:52:31 2018] GET /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Thu May 17 09:02:16 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 158.69.32.224) !!!
+Thu May 17 09:02:16 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (158.69.32.224)
+IOError: write error
+[pid: 19996|app: 0|req: 21/107] 158.69.32.224 () {34 vars in 450 bytes} [Thu May 17 09:02:16 2018] GET / => generated 0 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /http:/www.xiaolingfeng.top/
+Thu May 17 09:02:17 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F (ip 158.69.32.224) !!!
+Thu May 17 09:02:17 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F (158.69.32.224)
+IOError: write error
+[pid: 19998|app: 0|req: 22/108] 158.69.32.224 () {34 vars in 517 bytes} [Thu May 17 09:02:17 2018] GET /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Thu May 17 09:31:32 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 158.69.32.224) !!!
+Thu May 17 09:31:32 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (158.69.32.224)
+IOError: write error
+[pid: 19994|app: 0|req: 22/109] 158.69.32.224 () {34 vars in 450 bytes} [Thu May 17 09:31:32 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /http:/www.xiaolingfeng.top/
+Thu May 17 09:31:33 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F (ip 158.69.32.224) !!!
+Thu May 17 09:31:33 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F (158.69.32.224)
+IOError: write error
+[pid: 19995|app: 0|req: 22/110] 158.69.32.224 () {34 vars in 517 bytes} [Thu May 17 09:31:33 2018] GET /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Thu May 17 10:11:21 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 204.44.65.210) !!!
+Thu May 17 10:11:21 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (204.44.65.210)
+IOError: write error
+[pid: 19997|app: 0|req: 24/111] 204.44.65.210 () {34 vars in 450 bytes} [Thu May 17 10:11:21 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /http:/www.xiaolingfeng.top/
+Thu May 17 10:11:21 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F (ip 204.44.65.210) !!!
+Thu May 17 10:11:21 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F (204.44.65.210)
+IOError: write error
+[pid: 19996|app: 0|req: 22/112] 204.44.65.210 () {34 vars in 517 bytes} [Thu May 17 10:11:21 2018] GET /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Thu May 17 10:40:36 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 104.238.248.15) !!!
+Thu May 17 10:40:36 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (104.238.248.15)
+IOError: write error
+[pid: 19998|app: 0|req: 23/113] 104.238.248.15 () {34 vars in 451 bytes} [Thu May 17 10:40:36 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /http:/www.xiaolingfeng.top/
+Thu May 17 10:40:37 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F (ip 104.238.248.15) !!!
+Thu May 17 10:40:37 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F (104.238.248.15)
+IOError: write error
+[pid: 19994|app: 0|req: 23/114] 104.238.248.15 () {34 vars in 518 bytes} [Thu May 17 10:40:37 2018] GET /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Thu May 17 11:13:42 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 104.238.248.15) !!!
+Thu May 17 11:13:42 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (104.238.248.15)
+IOError: write error
+[pid: 19995|app: 0|req: 23/115] 104.238.248.15 () {34 vars in 451 bytes} [Thu May 17 11:13:42 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /http:/www.xiaolingfeng.top/
+Thu May 17 11:13:44 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F (ip 104.238.248.15) !!!
+Thu May 17 11:13:44 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F (104.238.248.15)
+IOError: write error
+[pid: 19997|app: 0|req: 25/116] 104.238.248.15 () {34 vars in 518 bytes} [Thu May 17 11:13:44 2018] GET /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Thu May 17 11:42:57 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 104.238.248.15) !!!
+Thu May 17 11:42:57 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (104.238.248.15)
+IOError: write error
+[pid: 19996|app: 0|req: 23/117] 104.238.248.15 () {34 vars in 451 bytes} [Thu May 17 11:42:57 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /http:/www.xiaolingfeng.top/
+Thu May 17 11:42:57 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F (ip 104.238.248.15) !!!
+Thu May 17 11:42:57 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F (104.238.248.15)
+IOError: write error
+[pid: 19998|app: 0|req: 24/118] 104.238.248.15 () {34 vars in 518 bytes} [Thu May 17 11:42:57 2018] GET /http%3A%2F%2Fwww%2Exiaolingfeng%2Etop%2F => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Thu May 17 14:02:55 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 41.33.170.105) !!!
+Thu May 17 14:02:55 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (41.33.170.105)
+IOError: write error
+[pid: 19994|app: 0|req: 24/119] 41.33.170.105 () {38 vars in 614 bytes} [Thu May 17 14:02:55 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /wp-includes/wlwmanifest.xml
+Thu May 17 14:02:56 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /wp-includes/wlwmanifest.xml (ip 41.33.170.105) !!!
+Thu May 17 14:02:56 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /wp-includes/wlwmanifest.xml (41.33.170.105)
+IOError: write error
+[pid: 19995|app: 0|req: 24/120] 41.33.170.105 () {38 vars in 668 bytes} [Thu May 17 14:02:56 2018] GET /wp-includes/wlwmanifest.xml => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /xmlrpc.php
+Thu May 17 14:02:57 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /xmlrpc.php?rsd (ip 41.33.170.105) !!!
+Thu May 17 14:02:57 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /xmlrpc.php?rsd (41.33.170.105)
+IOError: write error
+[pid: 19997|app: 0|req: 26/121] 41.33.170.105 () {38 vars in 641 bytes} [Thu May 17 14:02:57 2018] GET /xmlrpc.php?rsd => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Thu May 17 14:02:57 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 41.33.170.105) !!!
+Thu May 17 14:02:57 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (41.33.170.105)
+IOError: write error
+[pid: 19996|app: 0|req: 24/122] 41.33.170.105 () {38 vars in 614 bytes} [Thu May 17 14:02:57 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Thu May 17 14:02:58 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /blog/wp-includes/wlwmanifest.xml (ip 41.33.170.105) !!!
+Thu May 17 14:02:58 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /blog/wp-includes/wlwmanifest.xml (41.33.170.105)
+IOError: write error
+[pid: 19998|app: 0|req: 25/123] 41.33.170.105 () {38 vars in 678 bytes} [Thu May 17 14:02:58 2018] GET /blog/wp-includes/wlwmanifest.xml => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Thu May 17 14:02:59 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /wordpress/wp-includes/wlwmanifest.xml (ip 41.33.170.105) !!!
+Thu May 17 14:02:59 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /wordpress/wp-includes/wlwmanifest.xml (41.33.170.105)
+IOError: write error
+[pid: 19994|app: 0|req: 25/124] 41.33.170.105 () {38 vars in 688 bytes} [Thu May 17 14:02:59 2018] GET /wordpress/wp-includes/wlwmanifest.xml => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Thu May 17 14:02:59 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /wp/wp-includes/wlwmanifest.xml (ip 41.33.170.105) !!!
+Thu May 17 14:02:59 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /wp/wp-includes/wlwmanifest.xml (41.33.170.105)
+IOError: write error
+[pid: 19995|app: 0|req: 25/125] 41.33.170.105 () {38 vars in 674 bytes} [Thu May 17 14:02:59 2018] GET /wp/wp-includes/wlwmanifest.xml => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /site/wp-includes/wlwmanifest.xml
+Thu May 17 14:03:00 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /site/wp-includes/wlwmanifest.xml (ip 41.33.170.105) !!!
+Thu May 17 14:03:00 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /site/wp-includes/wlwmanifest.xml (41.33.170.105)
+IOError: write error
+[pid: 19997|app: 0|req: 27/126] 41.33.170.105 () {38 vars in 678 bytes} [Thu May 17 14:03:00 2018] GET /site/wp-includes/wlwmanifest.xml => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Thu May 17 14:03:01 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /cms/wp-includes/wlwmanifest.xml (ip 41.33.170.105) !!!
+Thu May 17 14:03:01 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /cms/wp-includes/wlwmanifest.xml (41.33.170.105)
+IOError: write error
+[pid: 19996|app: 0|req: 25/127] 41.33.170.105 () {38 vars in 676 bytes} [Thu May 17 14:03:01 2018] GET /cms/wp-includes/wlwmanifest.xml => generated 0 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Thu May 17 14:22:11 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 18.232.141.183) !!!
+Thu May 17 14:22:11 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (18.232.141.183)
+IOError: write error
+[pid: 19998|app: 0|req: 26/128] 18.232.141.183 () {38 vars in 625 bytes} [Thu May 17 14:22:11 2018] GET / => generated 0 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)

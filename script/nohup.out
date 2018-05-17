@@ -1,0 +1,77 @@
+[uWSGI] getting INI configuration from uwsgi.ini
+[uwsgi-static] added mapping for /static => static
+*** Starting uWSGI 2.0.17 (64bit) on [Wed May  9 22:49:44 2018] ***
+compiled with version: 5.4.0 20160609 on 08 May 2018 16:30:10
+os: Linux-4.4.0-62-generic #83-Ubuntu SMP Wed Jan 18 14:10:15 UTC 2017
+nodename: iZ2ze22r9fb8u58ksua145Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /django_test/script
+writing pidfile to /django_test/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi2
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /django_test/django-cms/
+your processes number limit is 3826
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:80 fd 3
+uwsgi socket 0 bound to UNIX address /django_test/script/uwsgi.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x2013420
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2013420 pid: 8241 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8241)
+spawned uWSGI worker 1 (pid: 8244, cores: 1)
+spawned uWSGI worker 2 (pid: 8245, cores: 1)
+spawned uWSGI worker 3 (pid: 8246, cores: 1)
+spawned uWSGI worker 4 (pid: 8247, cores: 1)
+spawned uWSGI worker 5 (pid: 8248, cores: 1)
+spawned uWSGI http 1 (pid: 8249)
+[pid: 8247|app: 0|req: 1/1] 59.172.244.14 () {40 vars in 713 bytes} [Wed May  9 14:49:52 2018] GET / => generated 14201 bytes in 50 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+Not Found: /holder.js/400x300
+Not Found: /holder.js/110x80
+Not Found: /holder.js/400x300
+Wed May  9 14:49:52 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /holder.js/400x300?bg=FF8C00&text=Image%202 (ip 59.172.244.14) !!!
+Wed May  9 14:49:52 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /holder.js/400x300?bg=FF8C00&text=Image%202 (59.172.244.14)
+IOError: write error
+[pid: 8246|app: 0|req: 1/2] 59.172.244.14 () {38 vars in 721 bytes} [Wed May  9 14:49:52 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 0 bytes in 158 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May  9 14:49:52 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /holder.js/400x300?bg=FF8C00&text=Image%201 (ip 59.172.244.14) !!!
+Wed May  9 14:49:52 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /holder.js/400x300?bg=FF8C00&text=Image%201 (59.172.244.14)
+IOError: write error
+[pid: 8248|app: 0|req: 1/3] 59.172.244.14 () {38 vars in 721 bytes} [Wed May  9 14:49:52 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 0 bytes in 169 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May  9 14:49:52 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /holder.js/400x300?bg=FF8C00&text=Image%203 (ip 59.172.244.14) !!!
+Wed May  9 14:49:52 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /holder.js/400x300?bg=FF8C00&text=Image%203 (59.172.244.14)
+IOError: write error
+[pid: 8245|app: 0|req: 1/4] 59.172.244.14 () {38 vars in 721 bytes} [Wed May  9 14:49:52 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 0 bytes in 167 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+Wed May  9 14:49:52 2018 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /holder.js/110x80 (ip 59.172.244.14) !!!
+Wed May  9 14:49:52 2018 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /holder.js/110x80 (59.172.244.14)
+IOError: write error
+[pid: 8244|app: 0|req: 1/5] 59.172.244.14 () {38 vars in 670 bytes} [Wed May  9 14:49:52 2018] GET /holder.js/110x80 => generated 0 bytes in 161 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 0)
+[pid: 8247|app: 0|req: 2/6] 59.172.244.14 () {40 vars in 713 bytes} [Wed May  9 14:49:53 2018] GET / => generated 14201 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+Not Found: /holder.js/110x80
+[pid: 8248|app: 0|req: 2/7] 59.172.244.14 () {38 vars in 670 bytes} [Wed May  9 14:49:53 2018] GET /holder.js/110x80 => generated 2170 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Not Found: /holder.js/400x300
+Not Found: /holder.js/400x300
+[pid: 8245|app: 0|req: 2/9] 59.172.244.14 () {38 vars in 721 bytes} [Wed May  9 14:49:53 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%203 => generated 2202 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8244|app: 0|req: 2/9] 59.172.244.14 () {38 vars in 721 bytes} [Wed May  9 14:49:53 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%201 => generated 2202 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 8246|app: 0|req: 2/10] 59.172.244.14 () {38 vars in 721 bytes} [Wed May  9 14:49:53 2018] GET /holder.js/400x300?bg=FF8C00&text=Image%202 => generated 2202 bytes in 14 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+Wed May  9 14:50:05 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed May  9 14:50:05 2018 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed May  9 14:50:05 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed May  9 14:50:05 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed May  9 14:50:05 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!

@@ -1,0 +1,65 @@
+nohup: ignoring input
+[uWSGI] getting INI configuration from uwsgi.ini
+[uwsgi-static] added mapping for /static => static
+*** Starting uWSGI 2.0.17 (64bit) on [Wed May 16 12:22:09 2018] ***
+compiled with version: 5.4.0 20160609 on 09 May 2018 13:46:08
+os: Linux-4.4.0-62-generic #83-Ubuntu SMP Wed Jan 18 14:10:15 UTC 2017
+nodename: iZ2ze22r9fb8u58ksua145Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /django_test/script
+writing pidfile to /django_test/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /django_test/django-cms/
+your processes number limit is 3826
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+building mime-types dictionary from file /etc/mime.types...552 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /django_test/script/uwsgi.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1617e80
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./cms/wsgi.py", line 18, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib/python3.5/dist-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python3.5/dist-packages/django/apps/registry.py", line 112, in populate
+    app_config.import_models()
+  File "/usr/local/lib/python3.5/dist-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "./focus/models.py", line 53, in <module>
+    class Article(models.Model):
+  File "./focus/models.py", line 54, in Article
+    column = models.ForeignKey(Column, blank=True, null=True, verbose_name = 'belong to')
+TypeError: __init__() missing 1 required positional argument: 'on_delete'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19391)
+spawned uWSGI worker 1 (pid: 19393, cores: 1)
+spawned uWSGI worker 2 (pid: 19394, cores: 1)
+spawned uWSGI worker 3 (pid: 19395, cores: 1)
+spawned uWSGI worker 4 (pid: 19396, cores: 1)
+spawned uWSGI worker 5 (pid: 19397, cores: 1)
+Wed May 16 04:25:16 2018 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed May 16 04:25:16 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed May 16 04:25:16 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed May 16 04:25:16 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed May 16 04:25:16 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
